@@ -1,9 +1,10 @@
-# 🎹 Charybdis 4x6 Keymap - Colemak-DH
+# 🎹 Charybdis 4x6 Keymap - Colemak-DH Optimizado
 
-> **Configuración del vendedor Vzhao-L con layout Colemak-DH**
+> **Configuración basada en nophramel + Vendor Vzhao-L**
 > - Firmware: DoctorWangWang ZMK fork (feature-test)
 > - Hardware: Nice Nano v2 + Trackball PMW3610 (lado derecho)
-> - Layout: Colemak-DH modificado
+> - Layout: Colemak-DH con Home Row Mods
+> - Capas: 4 capas optimizadas (BASE, NUM, NAV, SYS)
 
 ---
 
@@ -15,177 +16,282 @@
 ├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
 │ TAB │  Q  │  W  │  F  │  P  │  B  │              │  J  │  L  │  U  │  Y  │  ;  │  \   │
 ├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
-│SHIFT│  A  │  R  │  S  │  T  │  G  │              │  M  │  N  │  E  │  I  │  O  │  '   │
+│ DEL │  A  │  R  │  S  │  T  │  G  │              │  M  │  N  │  E  │  I  │  O  │  '   │
+│     │CTRL │ ALT │ GUI │SHFT │     │              │     │SHFT │ GUI │ ALT │CTRL │      │
 ├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
-│CTRL │  Z  │  X  │  C  │  D  │  V  │              │  K  │  H  │  ,  │  .  │  /  │  -   │
+│SHIFT│  Z  │  X  │  C  │  D  │  V  │              │  K  │  H  │  ,  │  .  │  /  │  -   │
 ╰─────┴─────┴─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┴─────┴─────┴──────╯
-                  │ GUI │ SPC │ L1  │              │ ALT │  `  │
+                  │ TAB │ SPC │ GUI │              │ RET │BKSP │
+                  │ ➊  │     │ ➋  │              │ ➊  │     │
                   ╰─────┴─────┴─────╯              ╰─────┴─────╯
-                        │RCLK │LCLK │              │ ENT │
+                        │RCLK │LCLK │              │ ➋  │
                         ╰─────┴─────╯              ╰─────╯
 
       IZQUIERDA (5 teclas)              DERECHA (3 teclas + Trackball)
       ┌─────┬─────┬─────┐               ┌─────┬─────┐
-      │ GUI │ SPC │ L1  │               │ ALT │  `  │
+      │ TAB │ SPC │ GUI │               │ RET │BKSP │
+      │ ➊  │     │ ➋  │               │ ➊  │     │
       ├─────┼─────┼─────┤               └─────┴─────┘
-      │RCLK │LCLK │     │               ┌─────┐
-      └─────┴─────┘     │               │ ENT │
-                        │               └─────┘
-                        │               🖱️ Trackball
-                        │               (movimiento cursor)
+      │RCLK │LCLK │ ➋  │               ┌─────┐
+      └─────┴─────┴─────┘               │ ➋  │
+                                        └─────┘
+                                        🖱️ Trackball
+                                        (tmv_coarse)
 ```
 
 **Características:**
-- Layout: **Colemak-DH** (optimizado para comodidad)
-- Trackball: Movimiento de cursor en modo normal (`tmv_coarse`)
-- Thumbs L: Win, Espacio, Layer 1, Click derecho, Click izquierdo
-- Thumbs R: Alt, Tilde, Enter
+- ✅ **Colemak-DH**: Layout optimizado para comodidad y velocidad
+- ✅ **Home Row Mods**: Modificadores en home row (CTRL, ALT, GUI, SHIFT)
+  - **Hold** = Modificador | **Tap** = Letra
+  - Solo se activan al presionar teclas del lado opuesto
+- ✅ **Layer-tap thumbs**: 
+  - ➊ = Layer 1 (NUM) al mantener, TAB/RET al presionar
+  - ➋ = Layer 2 (NAV) al mantener, GUI/BKSP al presionar
+- ✅ **Trackball**: Movimiento normal del cursor
 
 ---
 
-## ⚙️ Capa 1: SÍMBOLOS Y NAVEGACIÓN
+## 🔢 Capa 1: NUMBERS & SYMBOLS
 
 ```
 ╭─────┬─────┬─────┬─────┬─────┬─────╮              ╭─────┬─────┬─────┬─────┬─────┬──────╮
-│ F1  │ F2  │ F3  │ F4  │ F5  │ F6  │              │ F7  │ F8  │ F9  │ F10 │ F11 │ F12  │
+│     │     │     │     │     │     │              │     │     │     │     │     │      │
 ├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
-│CAPS │     │     │     │     │BT▶  │              │     │     │  ↑  │     │     │      │
+│  `  │  !  │  @  │  #  │  $  │  %  │              │  ^  │  7  │  8  │  9  │  *  │  |   │
 ├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
-│SHIFT│     │     │     │     │BT✖  │              │     │  ←  │  ↓  │  →  │     │      │
+│     │  1  │  2  │  3  │  4  │  5  │              │  +  │  4  │  5  │  6  │  =  │  &   │
+│     │CTRL │ ALT │ GUI │SHFT │     │              │     │SHFT │ GUI │ ALT │CTRL │      │
 ├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
-│CTRL │     │     │     │     │     │              │     │     │  .  │  ]  │     │  =   │
+│     │  [  │  ]  │  (  │  )  │  _  │              │  -  │  1  │  2  │  3  │  .  │  \   │
 ╰─────┴─────┴─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┴─────┴─────┴──────╯
-                  │ GUI │ SPC │ *** │              │ ALT │ DEL │
+                  │ *** │BKSP │ ➌  │              │ *** │  0  │
                   ╰─────┴─────┴─────╯              ╰─────┴─────╯
-                        │RCLK │LCLK │              │ ENT │
+                        │     │     │              │ ➌  │
                         ╰─────┴─────╯              ╰─────╯
 ```
 
 **Características:**
-- Fila superior: **Teclas F1-F12**
-- Bluetooth: `BT▶` = Siguiente dispositivo, `BT✖` = Limpiar emparejamiento
-- Navegación: **Flechas** en posición vim (HJKL → ←↓→)
-- Trackball: **Modo scroll** (`tsl`) - mueve para hacer scroll
-
-**Notas:**
-- `***` = Layer activo (hold para mantener)
-- Posición CAPS LOCK en esta capa
-
----
-
-## 🖱️ Trackball PMW3610 - Configuración
-
-### Hardware
-```
-Conexión SPI (lado derecho):
-┌─────────────────────┐
-│ SCK:  Pin 8         │
-│ MOSI: Pin 17        │
-│ MISO: Pin 17 (3-wire)│
-│ CS:   P0.20         │
-│ IRQ:  P0.06         │
-└─────────────────────┘
-
-Matriz GPIO:
-- Filas: P0.31, P1.15, P0.24, P0.22, P1.6
-- Columnas: P0.2, P0.29, P0.9, P1.0, P0.11, P1.4
-```
-
-### Modos de operación
-
-| Capa | Modo Trackball | Descripción |
-|------|----------------|-------------|
-| 0    | `tmv_coarse`   | Movimiento normal del cursor |
-| 1    | `tsl`          | Modo scroll (vertical/horizontal) |
-
-**Uso:**
-- **Capa 0**: Mueve el trackball → cursor se mueve
-- **Capa 1** (hold Layer 1): Mueve el trackball → scroll vertical
-- **Clicks**: Usa teclas RCLK/LCLK en pulgares izquierdos
+- ✅ **Símbolos** en fila superior: ! @ # $ % ^ * |
+- ✅ **Números 1-9** con home row mods en mano izquierda
+- ✅ **Numpad** en mano derecha (7 8 9 / 4 5 6 / 1 2 3 / 0)
+- ✅ **Operadores**: + - * / = 
+- ✅ **Paréntesis**: [ ] ( ) { }
+- ✅ **Trackball**: Modo scroll (`tsl`) - mueve para scroll vertical
+- ➌ = Activa Layer 3 (SYS) al presionar simultáneamente Layer 1 + 2
 
 ---
 
-## 🔧 Distribución física del teclado
+## 🧭 Capa 2: NAVIGATION & MEDIA
 
 ```
-┌─────────────────────┐              ┌─────────────────────┐
-│   Teclas 4x6        │              │   Teclas 4x6        │
-│   (24 teclas)       │              │   (24 teclas)       │
-├─────────────────────┤              ├─────────────────────┤
-│ Pulgares (5 teclas) │              │ Pulgares (3 teclas) │
-│  ┌───┬───┬───┐      │              │  ┌───┬───┐          │
-│  │GUI│SPC│L1 │      │              │  │ALT│ ` │          │
-│  ├───┼───┼───┤      │              │  └───┴───┘          │
-│  │RCK│LCK│   │      │              │  ┌───┐              │
-│  └───┴───┘   │      │              │  │ENT│              │
-└───────────────┘      │              │  └───┘              │
-  Lado IZQUIERDO       │              └─────────────────────┘
-                       │                 Lado DERECHO
-                       │              ┌─────────────────────┐
-                       │              │   🖱️ Trackball      │
-                       │              │   PMW3610 (físico)  │
-                       │              └─────────────────────┘
+╭─────┬─────┬─────┬─────┬─────┬─────╮              ╭─────┬─────┬─────┬─────┬─────┬──────╮
+│     │     │     │     │     │     │              │     │     │     │     │     │      │
+├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
+│     │ F1  │ F2  │ F3  │ F4  │ F5  │              │ F6  │ F7  │ F8  │ F9  │ F10 │ F11  │
+├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
+│     │HOME │PG_UP│ ⏮  │ ⏯  │ ⏭  │              │     │  ←  │  ↓  │  ↑  │  →  │ F12  │
+├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
+│     │ END │PG_DN│VOL- │MUTE │VOL+ │              │     │BRI- │BRI+ │     │     │      │
+╰─────┴─────┴─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┴─────┴─────┴──────╯
+                  │ ➌  │     │ *** │              │ ➌  │     │
+                  ╰─────┴─────┴─────╯              ╰─────┴─────╯
+                        │     │     │              │ *** │
+                        ╰─────┴─────╯              ╰─────╯
+```
+
+**Características:**
+- ✅ **Teclas F1-F12** distribuidas
+- ✅ **Navegación** en home row derecho: ← ↓ ↑ →
+- ✅ **Page navigation**: HOME, END, PG_UP, PG_DN
+- ✅ **Media controls**: 
+  - ⏮ Anterior | ⏯ Play/Pause | ⏭ Siguiente
+  - VOL- | MUTE | VOL+
+- ✅ **Brillo**: BRI- / BRI+
+- ✅ **Trackball**: Modo scroll (`tsl`)
+- ➌ = Activa Layer 3 (SYS) al presionar simultáneamente con Layer 1
+
+---
+
+## ⚙️ Capa 3: SYSTEM & BLUETOOTH
+
+```
+╭─────────┬─────┬─────┬─────┬─────┬─────╮         ╭─────┬─────┬─────┬─────┬─────┬─────────╮
+│BOOTLOAD │     │     │     │     │     │         │     │     │     │     │     │BOOTLOAD │
+├─────────┼─────┼─────┼─────┼─────┼─────┤         ├─────┼─────┼─────┼─────┼─────┼─────────┤
+│  RESET  │ BT0 │ BT1 │ BT2 │ BT3 │ BT4 │         │ BT4 │ BT3 │ BT2 │ BT1 │ BT0 │ RESET   │
+├─────────┼─────┼─────┼─────┼─────┼─────┤         ├─────┼─────┼─────┼─────┼─────┼─────────┤
+│         │     │     │     │     │BTCLR│         │BTCLR│     │     │     │     │         │
+├─────────┼─────┼─────┼─────┼─────┼─────┤         ├─────┼─────┼─────┼─────┼─────┼─────────┤
+│         │     │     │     │     │     │         │     │     │     │     │     │         │
+╰─────────┴─────┴─────┼─────┼─────┼─────┤         ├─────┼─────┼─────┴─────┴─────┴─────────╯
+                      │ *** │     │ *** │         │ *** │     │
+                      ╰─────┴─────┴─────╯         ╰─────┴─────╯
+                            │     │     │         │ *** │
+                            ╰─────┴─────╯         ╰─────╯
+```
+
+**Capa automática - se activa al presionar Layer 1 + 2 simultáneamente**
+
+**Características:**
+- ✅ **Bluetooth Profiles**: BT0-BT4 (5 dispositivos)
+  - Selecciona dispositivo en ambos lados para fácil acceso
+- ✅ **BT CLR**: Limpiar emparejamiento Bluetooth (centro)
+- ✅ **RESET**: Reiniciar firmware (esquinas superiores)
+- ✅ **BOOTLOADER**: Entrar en modo bootloader para flashear (esquinas top)
+- ✅ **Trackball**: Movimiento normal
+
+---
+
+## 🖱️ Configuración del Trackball PMW3610
+
+### Modos por capa
+
+| Capa | Modo | Comportamiento |
+|------|------|----------------|
+| 0 (BASE) | `tmv_coarse` | Movimiento normal del cursor |
+| 1 (NUM) | `tsl` | Scroll vertical (mueve el trackball = scroll) |
+| 2 (NAV) | `tsl` | Scroll vertical |
+| 3 (SYS) | `tmv_coarse` | Movimiento normal |
+
+### Mouse Clicks
+
+**Ubicación de clicks en pulgares izquierdos (fila inferior):**
+```
+┌─────┬─────┬─────┐
+│     │     │ MO2 │  ← Activa Layer 2 al mantener
+├─────┼─────┼─────┤
+│RCLK │LCLK │     │  ← Clicks del mouse
+└─────┴─────┴─────┘
+```
+
+- **RCLK** (Right Click): Click derecho
+- **LCLK** (Left Click): Click izquierdo  
+- Disponibles en todas las capas
+
+---
+
+## 💡 Funcionalidades Avanzadas
+
+### 1. Home Row Mods
+
+**Técnica de hold-trigger optimizada:**
+- Solo se activa el modificador al presionar teclas del **lado opuesto**
+- Tapping term: 200ms
+- Quick tap: 150ms
+
+**Ejemplo:**
+```
+Presionar A solo    → Escribe 'a'
+Hold A + J          → Control + J (funciona)
+Hold A + S          → Solo escribe 'as' (mismo lado, no activa)
+```
+
+### 2. Layer-Tap en Pulgares
+
+**Teclas multifunción:**
+```
+TAB (izq sup):
+  - Tap rápido: TAB
+  - Hold: Layer 1 (NUM)
+
+GUI (izq sup):
+  - Tap rápido: GUI/Win
+  - Hold: Layer 2 (NAV)
+
+RET (der sup):
+  - Tap rápido: ENTER
+  - Hold: Layer 1 (NUM)
+
+MO(2) (izq inf):
+  - Solo hold: Layer 2 (NAV)
+```
+
+### 3. Conditional Layers
+
+**Layer 3 (SYS) se activa automáticamente:**
+```
+Layer 1 (NUM) + Layer 2 (NAV) = Layer 3 (SYS)
+```
+No necesitas tecla dedicada para acceder a funciones de sistema.
+
+---
+
+## 🎯 Guía de Uso Rápido
+
+### Uso diario
+```
+Escribir:          Capa 0 (BASE)
+Números:           Hold TAB o ENTER → Capa 1
+Navegación:        Hold GUI o MO(2) → Capa 2
+Bluetooth:         Hold TAB + GUI → Capa 3
+Scroll:            Activar capa 1 o 2, luego mover trackball
+```
+
+### Shortcuts comunes
+```
+Copy:    Hold S + C (GUI + C en Mac/Linux, CTRL + C en Win)
+Paste:   Hold S + V
+Cut:     Hold S + X
+Undo:    Hold A + Z
+Save:    Hold A + S (CTRL + S)
+```
+
+### Cambiar dispositivo Bluetooth
+```
+1. Hold TAB + GUI (activa Layer 3)
+2. Presiona BT0, BT1, BT2, BT3 o BT4
+3. Suelta TAB + GUI
 ```
 
 ---
 
-## 📝 Notas importantes
-
-### Colemak-DH vs QWERTY
-```
-Cambios principales:
-QWERTY: Q W E R T Y U I O P
-        ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓
-Colemak: Q W F P B J L U Y ;
-
-QWERTY: A S D F G H J K L
-        ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓
-Colemak: A R S T G M N E I O
-
-Fila inferior casi igual, solo D y V intercambiados
-```
-
-### Teclas especiales
-- **Layer 1**: Hold tecla "L1" en pulgar derecho superior
-- **Mouse clicks**: RCLK/LCLK en fila inferior de pulgares izquierdos
-- **Bluetooth**: Disponible en Layer 1
-  - `BT▶` (BT_NXT): Cambiar dispositivo emparejado
-  - `BT✖` (BT_CLR): Limpiar emparejamientos
-
-### Configuración ZMK
-```yaml
-# west.yml
-remote: DoctorWangWang/zmk
-revision: feature-test
-
-Soporte nativo de:
-- Trackball PMW3610
-- Mouse keys (mkp)
-- Pointing device
-```
-
----
-
-## 🚀 Flashear firmware
+## 🚀 Flashear Firmware
 
 ```bash
-# Descargar firmware de GitHub Actions
+# Descargar de GitHub Actions
 cd ~/Downloads
 unzip firmware.zip
 
-# Flashear lado IZQUIERDO
-# 1. Conecta Nice Nano izquierdo via USB
-# 2. Presiona botón RESET 2 veces (aparece como NICENANO)
+# Flashear IZQUIERDO
+# 1. Conectar USB
+# 2. Doble-click RESET
+# 3. Copiar archivo
 cp charybdis-charybdis_left-nice_nano_v2-zmk.uf2 /Volumes/NICENANO/
 
-# Flashear lado DERECHO (con trackball)
-# 1. Conecta Nice Nano derecho via USB
-# 2. Presiona botón RESET 2 veces
+# Flashear DERECHO (con trackball)
+# 1. Conectar USB
+# 2. Doble-click RESET  
+# 3. Copiar archivo
 cp charybdis-charybdis_right-nice_nano_v2-zmk.uf2 /Volumes/NICENANO/
+
+# Reset settings (si hay problemas)
+cp charybdis-settings_reset-nice_nano_v2-zmk.uf2 /Volumes/NICENANO/
+```
+
+---
+
+## 📊 Comparación Colemak-DH vs QWERTY
+
+```
+Optimizaciones de Colemak-DH:
+- Menos movimiento lateral de dedos
+- Letras más comunes en home row
+- Mejor alternancia entre manos
+- Reducción de SFBs (Same Finger Bigrams)
+
+QWERTY:  Q W E R T Y U I O P      Colemak-DH: Q W F P B J L U Y ;
+QWERTY:  A S D F G H J K L        Colemak-DH: A R S T G M N E I O
+QWERTY:  Z X C V B N M            Colemak-DH: Z X C D V K H , .
+
+Teclas que cambian:
+E→F, R→P, T→B, Y→J, U→L, I→U, O→Y, P→;
+D→S, F→T, G→(stay), H→M, J→N, K→E, L→I, ;→O
+V→D
 ```
 
 ---
 
 *Última actualización: 2026-01-16*  
-*Configuración: Vzhao-L vendor + Colemak-DH*  
-*Firmware: DoctorWangWang ZMK (feature-test)*
+*Configuración: Vzhao-L (vendor) + nophramel (optimizaciones)*  
+*Firmware: DoctorWangWang ZMK fork (feature-test)*  
+*Layout: Colemak-DH con Home Row Mods*
