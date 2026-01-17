@@ -24,18 +24,19 @@
                   │ TAB │LCLK │RCLK │              │ RET │BKSP │
                   │ ➊  │     │     │              │ ➊  │     │
                   ╰─────┴─────┴─────╯              ╰─────┴─────╯
-                        │ SPC │ GUI │              │ ➋  │
-                        │     │ ➋  │              ╰─────╯
-                        ╰─────┴─────╯
+                        │ SPC │ ➋  │              │ GUI │
+                        │     │     │              │ ➋  │
+                        ╰─────┴─────╯              ╰─────╯
 
       IZQUIERDA (5 teclas)              DERECHA (3 teclas + Trackball)
       ┌─────┬─────┬─────┐               ┌─────┬─────┐
       │ TAB │LCLK │RCLK │               │ RET │BKSP │
       │ ➊  │     │     │               │ ➊  │     │
       ├─────┼─────┼─────┤               └─────┴─────┘
-      │ SPC │ GUI │ ➋  │               ┌─────┐
-      │     │ ➋  │     │               │ ➋  │
-      └─────┴─────┴─────┘               └─────┘
+      │ SPC │ ➋  │     │               ┌─────┐
+      │     │     │     │               │ GUI │
+      └─────┴─────┴─────┘               │ ➋  │
+                                        └─────┘
                                         🖱️ Trackball
                                         (tmv_coarse)
 ```
@@ -47,7 +48,7 @@
   - Solo se activan al presionar teclas del lado opuesto
 - ✅ **Layer-tap thumbs**: 
   - ➊ = Layer 1 (NUM) al mantener, TAB/RET al presionar
-  - ➋ = Layer 2 (NAV) al mantener, GUI al presionar (fila inferior izquierda)
+  - ➋ = Layer 2 (NAV) al mantener, MO(2) en fila inferior izquierda / GUI en fila inferior derecha
 - ✅ **Mouse clicks**: LEFT y RIGHT click en fila superior de pulgares (centro)
 - ✅ **Trackball**: Movimiento normal del cursor
 
@@ -159,17 +160,20 @@
 
 **Ubicación de clicks en pulgares izquierdos (fila superior central):**
 ```
-┌─────┬─────┬─────┐
-│ TAB │LCLK │RCLK │  ← Mouse clicks en fila superior
-│ ➊  │     │     │
-├─────┼─────┼─────┤
-│ SPC │ GUI │ MO2 │  ← Fila inferior
-│     │ ➋  │     │
-└─────┴─────┴─────┘
+IZQUIERDA:                    DERECHA:
+┌─────┬─────┬─────┐           ┌─────┬─────┐
+│ TAB │LCLK │RCLK │           │ RET │BKSP │
+│ ➊  │     │     │           │ ➊  │     │
+├─────┼─────┼─────┤           └─────┴─────┘
+│ SPC │ ➋  │     │           ┌─────┐
+│     │     │     │           │ GUI │
+└─────┴─────┴─────┘           │ ➋  │
+                              └─────┘
 ```
 
-- **LCLK** (Left Click): Click izquierdo en posición central superior
-- **RCLK** (Right Click): Click derecho en posición derecha superior
+- **LCLK** (Left Click): Click izquierdo en posición central superior izquierda
+- **RCLK** (Right Click): Click derecho en posición derecha superior izquierda
+- **GUI** (Win/Cmd): Ahora en botón inferior derecho (RC 4,11)
 - Disponibles en capas 0 (BASE), 1 (NUM) y 2 (NAV)
 
 ---
@@ -194,26 +198,26 @@ Hold A + S          → Solo escribe 'as' (mismo lado, no activa)
 
 **Teclas multifunción:**
 ```
-TAB (izq sup):
+TAB (izq sup izq):
   - Tap rápido: TAB
   - Hold: Layer 1 (NUM)
 
 LCLK/RCLK (izq sup centro/derecha):
   - Solo tap: Left/Right Click
 
-SPC (izq inf):
+SPC (izq inf izq):
   - Tap rápido: SPACE
 
-GUI (izq inf):
-  - Tap rápido: GUI/Win
-  - Hold: Layer 2 (NAV)
+MO(2) (izq inf centro):
+  - Solo hold: Layer 2 (NAV)
 
-RET (der sup):
+RET (der sup izq):
   - Tap rápido: ENTER
   - Hold: Layer 1 (NUM)
 
-MO(2) (izq inf der):
-  - Solo hold: Layer 2 (NAV)
+GUI (der inf):
+  - Tap rápido: GUI/Win/Cmd
+  - Hold: Layer 2 (NAV)
 ```
 
 ### 3. Conditional Layers
@@ -232,11 +236,12 @@ No necesitas tecla dedicada para acceder a funciones de sistema.
 ```
 Escribir:          Capa 0 (BASE)
 Números:           Hold TAB o ENTER → Capa 1
-Navegación:        Hold GUI (izq inf) o MO(2) → Capa 2
+Navegación:        Hold GUI (der inf) o MO(2) (izq inf centro) → Capa 2
 Bluetooth:         Hold TAB + GUI → Capa 3
 Scroll:            Activar capa 1 o 2, luego mover trackball
-Click izquierdo:   Presionar LCLK (centro superior pulgares)
-Click derecho:     Presionar RCLK (derecha superior pulgares)
+Click izquierdo:   Presionar LCLK (centro superior izquierda)
+Click derecho:     Presionar RCLK (derecha superior izquierda)
+GUI/Win:           Presionar GUI (botón inferior derecho)
 ```
 
 ### Shortcuts comunes

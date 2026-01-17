@@ -59,7 +59,7 @@
 &kp DELETE      &hml LEFT_CONTROL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T  &kp G       &kp M      &hmr RIGHT_SHIFT N  &hmr RIGHT_GUI E  &hmr RIGHT_ALT I  &hmr RIGHT_CONTROL O            &kp SQT
 &kp LEFT_SHIFT  &kp Z                &kp X            &kp C            &kp D              &kp V       &kp K      &kp H               &kp COMMA         &kp DOT           &kp FSLH                        &kp MINUS
                                                       &lt 1 TAB        &mkp LCLK          &mkp RCLK   &lt 1 RET  &kp BSPC
-                                                                       &kp SPACE          &lt 2 LGUI  &mo 2
+                                                                       &kp SPACE          &mo 2       &lt 2 LGUI
             >;
             trackball-bindings = <&tmv_coarse>;
         };
