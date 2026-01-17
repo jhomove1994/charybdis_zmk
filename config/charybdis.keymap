@@ -58,8 +58,8 @@
 &kp TAB         &kp Q                &kp W            &kp F            &kp P              &kp B       &kp J      &kp L               &kp U             &kp Y             &kp SEMI                        &kp BSLH
 &kp DELETE      &hml LEFT_CONTROL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T  &kp G       &kp M      &hmr RIGHT_SHIFT N  &hmr RIGHT_GUI E  &hmr RIGHT_ALT I  &hmr RIGHT_CONTROL O            &kp SQT
 &kp LEFT_SHIFT  &kp Z                &kp X            &kp C            &kp D              &kp V       &kp K      &kp H               &kp COMMA         &kp DOT           &kp FSLH                        &kp MINUS
-                                                      &lt 1 TAB        &kp SPACE          &lt 2 LGUI  &lt 1 RET  &kp BSPC
-                                                                       &kp A              &kp B       &mo 2
+                                                      &lt 1 TAB        &mkp LCLK          &mkp RCLK   &lt 1 RET  &kp BSPC
+                                                                       &kp SPACE          &lt 2 LGUI  &mo 2
             >;
             trackball-bindings = <&tmv_coarse>;
         };
@@ -74,8 +74,8 @@
 &kp GRAVE  &kp EXCL              &kp AT           &kp HASH          &kp DLLR              &kp PRCNT    &kp CARET      &kp N7              &kp N8              &kp N9            &kp ASTRK                &kp PIPE
 &trans     &hml LEFT_CONTROL N1  &hml LEFT_ALT N2 &hml LEFT_GUI N3  &hml LEFT_SHIFT N4    &kp N5       &kp PLUS       &hmr RIGHT_SHIFT N4 &hmr RIGHT_GUI N5   &hmr RIGHT_ALT N6 &hmr RIGHT_CONTROL EQUAL &kp AMPS
 &trans     &kp LBKT              &kp RBKT         &kp LPAR          &kp RPAR              &kp UNDER    &kp MINUS      &kp N1              &kp N2              &kp N3            &kp COLON                &kp BSLH
-                                                  &trans            &kp BSPC              &trans       &trans         &kp N0
-                                                                    &mkp LCLK             &mkp RCLK    &trans
+                                                  &trans            &mkp LCLK             &mkp RCLK    &trans         &kp N0
+                                                                    &kp BSPC              &trans       &trans
             >;
             trackball-bindings = <&tsl>;
         };

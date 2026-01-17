@@ -21,20 +21,21 @@
 ├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
 │SHIFT│  Z  │  X  │  C  │  D  │  V  │              │  K  │  H  │  ,  │  .  │  /  │  -   │
 ╰─────┴─────┴─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┴─────┴─────┴──────╯
-                  │ TAB │ SPC │ GUI │              │ RET │BKSP │
-                  │ ➊  │     │ ➋  │              │ ➊  │     │
+                  │ TAB │LCLK │RCLK │              │ RET │BKSP │
+                  │ ➊  │     │     │              │ ➊  │     │
                   ╰─────┴─────┴─────╯              ╰─────┴─────╯
-                        │RCLK │LCLK │              │ ➋  │
-                        ╰─────┴─────╯              ╰─────╯
+                        │ SPC │ GUI │              │ ➋  │
+                        │     │ ➋  │              ╰─────╯
+                        ╰─────┴─────╯
 
       IZQUIERDA (5 teclas)              DERECHA (3 teclas + Trackball)
       ┌─────┬─────┬─────┐               ┌─────┬─────┐
-      │ TAB │ SPC │ GUI │               │ RET │BKSP │
-      │ ➊  │     │ ➋  │               │ ➊  │     │
+      │ TAB │LCLK │RCLK │               │ RET │BKSP │
+      │ ➊  │     │     │               │ ➊  │     │
       ├─────┼─────┼─────┤               └─────┴─────┘
-      │RCLK │LCLK │ ➋  │               ┌─────┐
-      └─────┴─────┴─────┘               │ ➋  │
-                                        └─────┘
+      │ SPC │ GUI │ ➋  │               ┌─────┐
+      │     │ ➋  │     │               │ ➋  │
+      └─────┴─────┴─────┘               └─────┘
                                         🖱️ Trackball
                                         (tmv_coarse)
 ```
@@ -46,7 +47,8 @@
   - Solo se activan al presionar teclas del lado opuesto
 - ✅ **Layer-tap thumbs**: 
   - ➊ = Layer 1 (NUM) al mantener, TAB/RET al presionar
-  - ➋ = Layer 2 (NAV) al mantener, GUI/BKSP al presionar
+  - ➋ = Layer 2 (NAV) al mantener, GUI al presionar (fila inferior izquierda)
+- ✅ **Mouse clicks**: LEFT y RIGHT click en fila superior de pulgares (centro)
 - ✅ **Trackball**: Movimiento normal del cursor
 
 ---
@@ -64,9 +66,9 @@
 ├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
 │     │  [  │  ]  │  (  │  )  │  _  │              │  -  │  1  │  2  │  3  │  .  │  \   │
 ╰─────┴─────┴─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┴─────┴─────┴──────╯
-                  │ *** │BKSP │ ➌  │              │ *** │  0  │
+                  │ *** │LCLK │RCLK │              │ *** │  0  │
                   ╰─────┴─────┴─────╯              ╰─────┴─────╯
-                        │     │     │              │ ➌  │
+                        │BKSP │ ➌  │              │ ➌  │
                         ╰─────┴─────╯              ╰─────╯
 ```
 
@@ -93,9 +95,9 @@
 ├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
 │     │ END │PG_DN│VOL- │MUTE │VOL+ │              │     │BRI- │BRI+ │     │     │      │
 ╰─────┴─────┴─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┴─────┴─────┴──────╯
-                  │ ➌  │     │ *** │              │ ➌  │     │
+                  │ ➌  │LCLK │RCLK │              │ ➌  │     │
                   ╰─────┴─────┴─────╯              ╰─────┴─────╯
-                        │     │     │              │ *** │
+                        │     │ *** │              │ *** │
                         ╰─────┴─────╯              ╰─────╯
 ```
 
@@ -155,18 +157,20 @@
 
 ### Mouse Clicks
 
-**Ubicación de clicks en pulgares izquierdos (fila inferior):**
+**Ubicación de clicks en pulgares izquierdos (fila superior central):**
 ```
 ┌─────┬─────┬─────┐
-│     │     │ MO2 │  ← Activa Layer 2 al mantener
+│ TAB │LCLK │RCLK │  ← Mouse clicks en fila superior
+│ ➊  │     │     │
 ├─────┼─────┼─────┤
-│RCLK │LCLK │     │  ← Clicks del mouse
+│ SPC │ GUI │ MO2 │  ← Fila inferior
+│     │ ➋  │     │
 └─────┴─────┴─────┘
 ```
 
-- **RCLK** (Right Click): Click derecho
-- **LCLK** (Left Click): Click izquierdo  
-- Disponibles en todas las capas
+- **LCLK** (Left Click): Click izquierdo en posición central superior
+- **RCLK** (Right Click): Click derecho en posición derecha superior
+- Disponibles en capas 0 (BASE), 1 (NUM) y 2 (NAV)
 
 ---
 
@@ -194,7 +198,13 @@ TAB (izq sup):
   - Tap rápido: TAB
   - Hold: Layer 1 (NUM)
 
-GUI (izq sup):
+LCLK/RCLK (izq sup centro/derecha):
+  - Solo tap: Left/Right Click
+
+SPC (izq inf):
+  - Tap rápido: SPACE
+
+GUI (izq inf):
   - Tap rápido: GUI/Win
   - Hold: Layer 2 (NAV)
 
@@ -202,7 +212,7 @@ RET (der sup):
   - Tap rápido: ENTER
   - Hold: Layer 1 (NUM)
 
-MO(2) (izq inf):
+MO(2) (izq inf der):
   - Solo hold: Layer 2 (NAV)
 ```
 
@@ -222,9 +232,11 @@ No necesitas tecla dedicada para acceder a funciones de sistema.
 ```
 Escribir:          Capa 0 (BASE)
 Números:           Hold TAB o ENTER → Capa 1
-Navegación:        Hold GUI o MO(2) → Capa 2
+Navegación:        Hold GUI (izq inf) o MO(2) → Capa 2
 Bluetooth:         Hold TAB + GUI → Capa 3
 Scroll:            Activar capa 1 o 2, luego mover trackball
+Click izquierdo:   Presionar LCLK (centro superior pulgares)
+Click derecho:     Presionar RCLK (derecha superior pulgares)
 ```
 
 ### Shortcuts comunes
