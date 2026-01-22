@@ -5,6 +5,7 @@
 > - Hardware: Nice Nano v2 + Trackball PMW3610 (lado derecho)
 > - Layout: Colemak-DH con Home Row Mods
 > - Capas: 4 capas optimizadas (BASE, NUM, NAV, SYS)
+> - **⚠️ IMPORTANTE: Configurado para layout US/Inglés - Cambia Windows a "English (United States)"**
 
 ---
 
@@ -56,29 +57,40 @@
 
 ## 🔢 Capa 1: NUMBERS & SYMBOLS
 
+⚠️ **IMPORTANTE**: Este keymap está configurado para layout **US/Inglés**. Si usas layout **Español**, los símbolos aparecerán diferentes.
+
+**Para que funcione correctamente en Windows:**
+- Ve a: **Win + I** → **Hora e idioma** → **Idioma**
+- Agrega: **"English (United States)"** 
+- Establécelo como predeterminado
+- O cambia rápido con: **Win + Barra Espaciadora**
+
 ```
 ╭─────┬─────┬─────┬─────┬─────┬─────╮              ╭─────┬─────┬─────┬─────┬─────┬──────╮
-│     │     │     │     │     │     │              │     │     │     │     │     │      │
+│     │     │     │     │     │CAPS │              │     │     │     │     │     │  :   │
 ├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
 │  `  │  !  │  @  │  #  │  $  │  %  │              │  ^  │  7  │  8  │  9  │  *  │  |   │
 ├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
 │     │  1  │  2  │  3  │  4  │  5  │              │  +  │  4  │  5  │  6  │  =  │  &   │
 │     │CTRL │ ALT │ GUI │SHFT │     │              │     │SHFT │ GUI │ ALT │CTRL │      │
 ├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
-│     │  [  │  ]  │  (  │  )  │  _  │              │  -  │  1  │  2  │  3  │  .  │  \   │
+│     │  [  │  ]  │  (  │  )  │  _  │              │  <  │  1  │  2  │  3  │  >  │  \   │
 ╰─────┴─────┴─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┴─────┴─────┴──────╯
                   │ *** │LCLK │RCLK │              │ *** │  0  │
                   ╰─────┴─────┴─────╯              ╰─────┴─────╯
-                        │BKSP │ ➌  │              │ ➌  │
+                        │BKSP │     │              │     │
                         ╰─────┴─────╯              ╰─────╯
 ```
 
 **Características:**
-- ✅ **Símbolos** en fila superior: ! @ # $ % ^ * |
-- ✅ **Números 1-9** con home row mods en mano izquierda
-- ✅ **Numpad** en mano derecha (7 8 9 / 4 5 6 / 1 2 3 / 0)
-- ✅ **Operadores**: + - * / = 
-- ✅ **Paréntesis**: [ ] ( ) { }
+- ✅ **Símbolos**: ` ! @ # $ % ^ & * | : + = - _ \ [ ] ( ) < >
+- ✅ **Números 1-5** con home row mods en mano izquierda
+- ✅ **Numpad** en mano derecha: 7 8 9 (fila 2) / 4 5 6 (fila 3) / 1 2 3 (fila 4) / 0 (pulgar)
+- ✅ **Símbolos de comparación**: < > en fila 4 (reemplazan - y . que estaban duplicados)
+- ✅ **Paréntesis y corchetes**: [ ] ( )
+- ✅ **Caps Lock**: Fila 1, columna 6 izquierda (mayúsculas sostenidas)
+- ⚠️ **Llaves { }**: Usar Shift + [ ] (tecla física [ y ])
+- ✅ **Para tildes**: Cambia a layout "US-International" en Windows (´ + vocal = á é í ó ú)
 - ✅ **Trackball**: Modo scroll (`tsl`) - mueve para scroll vertical
 - ➌ = Activa Layer 3 (SYS) al presionar simultáneamente Layer 1 + 2
 
@@ -88,11 +100,11 @@
 
 ```
 ╭─────┬─────┬─────┬─────┬─────┬─────╮              ╭─────┬─────┬─────┬─────┬─────┬──────╮
-│     │     │     │     │     │     │              │     │     │     │     │     │      │
+│     │     │     │     │     │PSCR │              │     │     │     │     │     │      │
 ├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
 │     │ F1  │ F2  │ F3  │ F4  │ F5  │              │ F6  │ F7  │ F8  │ F9  │ F10 │ F11  │
 ├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
-│     │HOME │PG_UP│ ⏮  │ ⏯  │ ⏭  │              │     │  ←  │  ↓  │  ↑  │  →  │ F12  │
+│     │HOME │PG_UP│ ⏮  │ ⏯  │ ⏭  │              │ INS │  ←  │  ↓  │  ↑  │  →  │ F12  │
 ├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
 │     │ END │PG_DN│VOL- │MUTE │VOL+ │              │     │BRI- │BRI+ │     │     │      │
 ╰─────┴─────┴─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┴─────┴─────┴──────╯
@@ -105,6 +117,8 @@
 **Características:**
 - ✅ **Teclas F1-F12** distribuidas
 - ✅ **Navegación** en home row derecho: ← ↓ ↑ →
+- ✅ **INSERT**: Agregado en home row derecho (antes de las flechas)
+- ✅ **Print Screen**: Fila 1, columna 6 izquierda (capturas de pantalla)
 - ✅ **Page navigation**: HOME, END, PG_UP, PG_DN
 - ✅ **Media controls**: 
   - ⏮ Anterior | ⏯ Play/Pause | ⏭ Siguiente
@@ -232,6 +246,21 @@ No necesitas tecla dedicada para acceder a funciones de sistema.
 
 ## 🎯 Guía de Uso Rápido
 
+### Configuración inicial de Windows
+```
+1. Cambia el layout del teclado a US:
+   - Win + I → Hora e idioma → Idioma
+   - Agrega "English (United States)"
+   - Establécelo como predeterminado
+   
+2. Para tildes/acentos, cambia a "US-International":
+   - Mismo menú, selecciona "US-International"
+   - Luego: ' + a = á, ' + e = é, etc.
+   
+3. Cambio rápido entre layouts:
+   - Win + Barra Espaciadora
+```
+
 ### Uso diario
 ```
 Escribir:          Capa 0 (BASE)
@@ -242,6 +271,15 @@ Scroll:            Activar capa 1 o 2, luego mover trackball
 Click izquierdo:   Presionar LCLK (centro superior izquierda)
 Click derecho:     Presionar RCLK (derecha superior izquierda)
 GUI/Win:           Presionar GUI (botón inferior derecho)
+```
+
+### Teclas especiales añadidas
+```
+< >         : En Capa NUM (Layer 1), fila 4 derecha
+INSERT      : En Capa NAV (Layer 2), antes de las flechas
+CAPS LOCK   : En Capa NUM (Layer 1), fila 1, col 6 izquierda
+PRINT SCREEN: En Capa NAV (Layer 2), fila 1, col 6 izquierda
+{ }         : Shift + [ ] en Capa NUM
 ```
 
 ### Shortcuts comunes
