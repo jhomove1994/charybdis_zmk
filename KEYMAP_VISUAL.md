@@ -325,6 +325,69 @@ cp charybdis-settings_reset-nice_nano_v2-zmk.uf2 /Volumes/NICENANO/
 
 ---
 
+## ⚡ Combos (Presionar 2 teclas simultáneamente)
+
+### Navegación y edición
+```
+W + F       → ESC        (Vim-style, mano izquierda)
+L + U       → ESC        (alternativa mano derecha)
+Q + W       → TAB        (acceso rápido)
+U + Y       → ENTER      (acceso rápido)
+Y + ;       → BACKSPACE  (acceso rápido lado derecho)
+H + K       → Ctrl+BKSP  (borrar palabra completa)
+T + N       → CAPS WORD  (mayúsculas temporales, ambos SHIFT en home row)
+```
+
+### Brackets automáticos (inserta par + cursor en medio)
+```
+F + P       → ()         (paréntesis)
+D + F       → {}         (llaves - C+D en layout físico)
+Z + X       → []         (corchetes)
+```
+
+### Flechas de programación
+```
+K + H       → ->         (arrow, C/C++/JS)
+Y + ;       → =>         (fat arrow, JS/Rust/etc)
+```
+
+**Nota**: Todos los combos tienen 50ms timeout para activación rápida sin interferir con escritura normal.
+
+---
+
+## 🎭 Tap-Dance (Múltiples taps = diferentes acciones)
+
+```
+. (DOT):
+  1 tap  → .
+  2 taps → ..
+  3 taps → ...
+
+SPACE:
+  1 tap  → espacio
+  2 taps → _ (underscore)
+```
+
+**Uso**: Presiona la tecla rápidamente 1, 2 o 3 veces según necesites.
+
+---
+
+## 🔄 Mod-Morphs (Tecla cambia con Shift)
+
+```
+, (COMMA):
+  Normal    → ,
+  + Shift   → ;
+
+. (DOT):
+  Normal    → .
+  + Shift   → :
+```
+
+**Nota**: Estos están disponibles pero opcionalmente puedes usar los combos para acceso más rápido.
+
+---
+
 ## 📊 Comparación Colemak-DH vs QWERTY
 
 ```
@@ -346,7 +409,26 @@ V→D
 
 ---
 
-*Última actualización: 2026-01-16*  
-*Configuración: Vzhao-L (vendor) + nophramel (optimizaciones)*  
+---
+
+## 🎓 Tips de Uso
+
+### Combos más útiles
+- **W+F**: ESC rápido sin salir del home row
+- **D+F**: Llaves {} listas para escribir dentro
+- **K+H**: Flecha -> para C/JavaScript
+- **T+N**: CAPS WORD para escribir CONSTANTES en mayúsculas
+
+### Macros de brackets
+Todos los macros de brackets (`()`, `{}`, `[]`) insertan el par y dejan el cursor en medio, listo para escribir.
+
+### Home Row Mods mejorados
+Con `require-prior-idle-ms = 150`, los modificadores solo se activan si esperas 150ms antes de presionar otra tecla. Esto previene activaciones accidentales durante escritura rápida.
+
+---
+
+*Última actualización: 2026-02-02*  
+*Configuración: Vzhao-L (vendor) + nophramel (optimizaciones) + Combos/Macros avanzados*  
 *Firmware: DoctorWangWang ZMK fork (feature-test)*  
-*Layout: Colemak-DH con Home Row Mods*
+*Layout: Colemak-DH con Home Row Mods*  
+*Features: Combos, Macros, Tap-Dance, Mod-Morphs*
