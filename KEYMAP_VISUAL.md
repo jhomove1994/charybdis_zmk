@@ -423,7 +423,7 @@ V→D
 Todos los macros de brackets (`()`, `{}`, `[]`) insertan el par y dejan el cursor en medio, listo para escribir.
 
 ### Home Row Mods mejorados
-Con `require-prior-idle-ms = 150`, los modificadores solo se activan si esperas 150ms antes de presionar otra tecla. Esto previene activaciones accidentales durante escritura rápida.
+Tapping term aumentado a 220ms para mejor precisión y prevenir activaciones accidentales durante escritura rápida.
 
 ---
 
