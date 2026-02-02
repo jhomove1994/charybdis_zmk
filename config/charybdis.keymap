@@ -50,7 +50,7 @@
             label = "TAP_DANCE_DOT";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp DOT>, <&kp DOT DOT>, <&macro_ellipsis>;
+            bindings = <&kp DOT>, <&macro_dot_dot>;
         };
 
         // Tap-dance: space/underscore
@@ -83,6 +83,13 @@
 
     /* Macros */
     macros {
+        macro_dot_dot: macro_dot_dot {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_DOT_DOT";
+            #binding-cells = <0>;
+            bindings = <&kp DOT &kp DOT>;
+        };
+
         macro_ellipsis: macro_ellipsis {
             compatible = "zmk,behavior-macro";
             label = "MACRO_ELLIPSIS";

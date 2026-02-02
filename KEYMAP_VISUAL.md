@@ -361,7 +361,6 @@ Y + ;       → =>         (fat arrow, JS/Rust/etc)
 . (DOT):
   1 tap  → .
   2 taps → ..
-  3 taps → ...
 
 SPACE:
   1 tap  → espacio
