@@ -4,8 +4,31 @@
 > - Firmware: DoctorWangWang ZMK fork (feature-test)
 > - Hardware: Nice Nano v2 + Trackball PMW3610 (lado derecho)
 > - Layout: Colemak-DH con Home Row Mods
-> - Capas: 4 capas optimizadas (BASE, NUM, NAV, SYS)
+> - Capas: 7 capas optimizadas (BASE, NUM, NAV, SYS, GAMING, G-NUM, G-NAV)
 > - **⚠️ IMPORTANTE: Configurado para layout US/Inglés - Cambia Windows a "English (United States)"**
+> - **🎮 NUEVO: Modo Gaming sin Home Row Mods para juegos**
+
+---
+
+## 🎮 Modo Gaming (Nuevo)
+
+**¿Para qué sirve?**
+- Configuración especial para juegos donde mantener teclas presionadas es común (WASD, etc.)
+- Elimina los Home Row Mods que pueden interferir durante el juego
+- Todas las teclas responden instantáneamente sin delays de hold-tap
+
+**¿Cómo activar el modo Gaming?**
+1. Mantén presionado **TAB + GUI** simultáneamente (activa Layer 3 - SYS)
+2. Presiona la tecla **A** (izquierda) o **O** (derecha) - verás el toggle en la posición
+3. Suelta TAB + GUI
+4. ¡Ahora estás en modo Gaming! (Layer 4)
+
+**¿Cómo volver al modo Trabajo?**
+- Repite el mismo proceso: TAB + GUI, luego presiona A o O
+
+**Diferencias clave:**
+- 🎮 **Gaming (Layer 4)**: Teclas normales sin hold-tap - CTRL, ALT, GUI, SHIFT son teclas dedicadas
+- 💼 **Trabajo (Layer 0)**: Home Row Mods activados - hold en home row para modificadores
 
 ---
 
@@ -137,7 +160,7 @@
 ├─────────┼─────┼─────┼─────┼─────┼─────┤         ├─────┼─────┼─────┼─────┼─────┼─────────┤
 │  RESET  │ BT0 │ BT1 │ BT2 │ BT3 │ BT4 │         │ BT4 │ BT3 │ BT2 │ BT1 │ BT0 │ RESET   │
 ├─────────┼─────┼─────┼─────┼─────┼─────┤         ├─────┼─────┼─────┼─────┼─────┼─────────┤
-│         │     │     │     │     │BTCLR│         │BTCLR│     │     │     │     │         │
+│         │🎮TOG│     │     │     │BTCLR│         │BTCLR│     │     │     │🎮TOG│         │
 ├─────────┼─────┼─────┼─────┼─────┼─────┤         ├─────┼─────┼─────┼─────┼─────┼─────────┤
 │         │     │     │     │     │     │         │     │     │     │     │     │         │
 ╰─────────┴─────┴─────┼─────┼─────┼─────┤         ├─────┼─────┼─────┴─────┴─────┴─────────╯
@@ -155,6 +178,7 @@
 - ✅ **BT CLR**: Limpiar emparejamiento Bluetooth (centro)
 - ✅ **RESET**: Reiniciar firmware (esquinas superiores)
 - ✅ **BOOTLOADER**: Entrar en modo bootloader para flashear (esquinas top)
+- ✅ **🎮 TOGGLE GAMING**: Teclas marcadas con 🎮TOG (posición A y O) cambian entre modo Trabajo y Gaming
 - ✅ **Trackball**: Movimiento normal
 
 ---
@@ -189,6 +213,61 @@ IZQUIERDA:                    DERECHA:
 - **RCLK** (Right Click): Click derecho en posición derecha superior izquierda
 - **GUI** (Win/Cmd): Ahora en botón inferior derecho (RC 4,11)
 - Disponibles en capas 0 (BASE), 1 (NUM) y 2 (NAV)
+
+---
+
+## 🎮 Capas 4-6: GAMING MODE (Sin Home Row Mods)
+
+### Capa 4: GAMING BASE
+
+```
+╭─────┬─────┬─────┬─────┬─────┬─────╮              ╭─────┬─────┬─────┬─────┬─────┬──────╮
+│ ESC │  1  │  2  │  3  │  4  │  5  │              │  6  │  7  │  8  │  9  │  0  │ BKSP │
+├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
+│ TAB │  Q  │  W  │  F  │  P  │  B  │              │  J  │  L  │  U  │  Y  │  ;  │  \   │
+├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
+│ DEL │  A  │  R  │  S  │  T  │  G  │              │  M  │  N  │  E  │  I  │  O  │  '   │
+│     │     │     │     │     │     │              │     │     │     │     │     │      │
+├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
+│SHIFT│  Z  │  X  │  C  │  D  │  V  │              │  K  │  H  │  ,  │  .  │  /  │  -   │
+╰─────┴─────┴─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┴─────┴─────┴──────╯
+                  │ TAB │LCLK │RCLK │              │ RET │BKSP │
+                  │ ➎  │     │     │              │ ➎  │     │
+                  ╰─────┴─────┴─────╯              ╰─────┴─────╯
+                        │ SPC │ ➏  │              │ GUI │
+                        │     │     │              │ ➏  │
+                        ╰─────┴─────╯              ╰─────╯
+```
+
+**Características del modo Gaming:**
+- ✅ **Sin Home Row Mods**: Todas las teclas en home row (A, R, S, T, N, E, I, O) son teclas normales
+- ✅ **Respuesta instantánea**: No hay delay de hold-tap - perfecto para mantener teclas presionadas (WASD, etc.)
+- ✅ **Mismo layout Colemak-DH**: La posición de las letras no cambia, solo el comportamiento
+- ✅ **Acceso a capas**: 
+  - ➎ = Layer 5 (G-NUM) al mantener TAB/RET
+  - ➏ = Layer 6 (G-NAV) al mantener la tecla inferior
+- ✅ **Modificadores disponibles**: SHIFT en la tecla física, CTRL/ALT/GUI debes usar combinaciones
+- ✅ **Sin combos activos**: Los combos están deshabilitados en gaming para evitar activaciones accidentales
+
+### Capa 5: GAMING NUMBERS & SYMBOLS
+
+Idéntica a la capa 1 (NUM) pero sin home row mods en las teclas de números izquierda.
+- Números 1-5 son teclas normales sin modificadores hold
+- Resto de símbolos y numpad funcionan igual
+
+### Capa 6: GAMING NAVIGATION & MEDIA
+
+Idéntica a la capa 2 (NAV) - funcionalidad completa de navegación, función keys y media controls.
+
+**¿Cuándo usar modo Gaming?**
+- 🎮 Juegos que requieren mantener WASD u otras teclas
+- 🎮 Juegos donde los delays de hold-tap interfieren con la jugabilidad
+- 🎮 Cualquier aplicación donde necesites respuesta instantánea sin delays
+
+**¿Cuándo usar modo Trabajo?**
+- 💼 Escritura normal y programación
+- 💼 Cuando quieres modificadores en home row (más ergonómico)
+- 💼 Trabajo de oficina general
 
 ---
 
@@ -263,7 +342,7 @@ No necesitas tecla dedicada para acceder a funciones de sistema.
 
 ### Uso diario
 ```
-Escribir:          Capa 0 (BASE)
+Escribir:          Capa 0 (BASE) - Modo Trabajo
 Números:           Hold TAB o ENTER → Capa 1
 Navegación:        Hold GUI (der inf) o MO(2) (izq inf centro) → Capa 2
 Bluetooth:         Hold TAB + GUI → Capa 3
@@ -271,6 +350,9 @@ Scroll:            Activar capa 1 o 2, luego mover trackball
 Click izquierdo:   Presionar LCLK (centro superior izquierda)
 Click derecho:     Presionar RCLK (derecha superior izquierda)
 GUI/Win:           Presionar GUI (botón inferior derecho)
+
+🎮 Modo Gaming:    Hold TAB + GUI → Presiona A o O → Modo Gaming activado
+💼 Modo Trabajo:   Hold TAB + GUI → Presiona A o O → Modo Trabajo activado
 ```
 
 ### Teclas especiales añadidas
@@ -282,13 +364,23 @@ PRINT SCREEN: En Capa NAV (Layer 2), fila 1, col 6 izquierda
 { }         : Shift + [ ] en Capa NUM
 ```
 
-### Shortcuts comunes
+### Shortcuts comunes (Modo Trabajo - Layer 0)
 ```
 Copy:    Hold S + C (GUI + C en Mac/Linux, CTRL + C en Win)
 Paste:   Hold S + V
 Cut:     Hold S + X
 Undo:    Hold A + Z
 Save:    Hold A + S (CTRL + S)
+
+Nota: En modo Gaming, usa las teclas CTRL/ALT/GUI físicas en lugar de home row mods
+```
+
+### Cambiar entre Modo Trabajo y Gaming
+```
+1. Hold TAB + GUI simultáneamente (activa Layer 3 - SYS)
+2. Presiona A (izquierda) o O (derecha) - ambas son teclas toggle
+3. Suelta TAB + GUI
+4. El teclado ahora está en el modo opuesto
 ```
 
 ### Cambiar dispositivo Bluetooth
