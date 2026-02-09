@@ -247,7 +247,7 @@ IZQUIERDA:                    DERECHA:
   - ➎ = Layer 5 (G-NUM) al mantener TAB/RET
   - ➏ = Layer 6 (G-NAV) al mantener la tecla inferior
 - ✅ **Modificadores disponibles**: SHIFT en la tecla física, CTRL/ALT/GUI debes usar combinaciones
-- ✅ **Sin combos activos**: Los combos están deshabilitados en gaming para evitar activaciones accidentales
+- ✅ **Sin combos activos**: Los combos están configurados solo para Layer 0, por lo que no se activan en gaming (previene activaciones accidentales)
 
 ### Capa 5: GAMING NUMBERS & SYMBOLS
 
