@@ -295,7 +295,7 @@
                                                    &trans       &trans         &trans
             >;
             trackball-bindings = <&tmv_coarse>;
-        }
+        };
 
         // ╭─────────────────────────────────────────────────╮
         // │ 4: GAMING BASE (No Home Row Mods)              │
@@ -311,7 +311,7 @@
                                                           &kp SPACE     &mo 6       &lt 6 LGUI
             >;
             trackball-bindings = <&tmv_coarse>;
-        }
+        };
 
         // ╭─────────────────────────────────────────────────╮
         // │ 5: GAMING NUMBERS & SYMBOLS                     │
@@ -327,7 +327,7 @@
                                          &kp BSPC  &trans       &trans
             >;
             trackball-bindings = <&tsl>;
-        }
+        };
 
         // ╭─────────────────────────────────────────────────╮
         // │ 6: GAMING NAVIGATION & MEDIA                    │
