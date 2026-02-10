@@ -449,11 +449,16 @@ Nota: En modo Gaming, usa las teclas CTRL/ALT/GUI físicas en lugar de home row 
 
 ### Activar modo Gaming
 ```
-1. Hold TAB + GUI (activa Layer 3)
-2. Presiona A (izq) o O (der) - toggle gaming
-3. En modo gaming: sin home row mods, sin combos
-4. Para desactivar: repite TAB + GUI + A/O
+1. Hold GUI (pulgar derecho) → Activa Layer 2 (NAV)
+2. Presiona 6 (primera tecla superior lado derecho)
+3. Modo gaming ON/OFF activado
+4. Para desactivar: repite GUI + 6
 ```
+
+**En modo gaming:**
+- Sin home row mods (ASDF son teclas normales)
+- Sin combos que interfieran
+- Perfecto para juegos donde mantienes WASD presionado
 
 ### Cambiar dispositivo Bluetooth
 ```
