@@ -139,7 +139,7 @@
 
 **Características:**
 - ✅ **Teclas F1-F12** distribuidas
-- ✅ **🎮 GAMING TOGGLE**: En esquina superior derecha (posición 6) - Activa/desactiva modo gaming
+- ✅ **🎮 GAMING MODE**: En esquina superior derecha (posición 6) - Cambia PERMANENTEMENTE a modo gaming
 - ✅ **Navegación** en home row derecho: ← ↓ ↑ →
 - ✅ **INSERT**: Agregado en home row derecho (antes de las flechas)
 - ✅ **Print Screen**: Fila 1, columna 6 izquierda (capturas de pantalla)
@@ -204,13 +204,19 @@
 ```
 
 **Activar/Desactivar:**
-- Mantén TAB + GUI (Layer 3)
-- Presiona A (izq) o O (der) 
-- Modo GAMING ON/OFF
+- Mantén GUI (pulgar derecho)
+- Presiona 6 (primera tecla superior lado derecho)
+- Se cambia PERMANENTEMENTE a modo gaming
+
+**Para SALIR de modo gaming:**
+- Mantén GUI (pulgar derecho) 
+- Presiona 6 de nuevo
+- Vuelves PERMANENTEMENTE a modo base
 
 **Características:**
 - ✅ **Sin Home Row Mods**: A, R, S, T, N, E, I, O son teclas normales
 - ✅ **Sin combos**: No hay interferencia de combos durante juego
+- ✅ **Puedes mantener WASD** presionado sin activar modificadores
 - ✅ **Acceso rápido**: TAB/RET acceden a capa de números (Layer 5)
 - ✅ **Trackball**: Movimiento normal para apuntar en juegos
 
@@ -248,6 +254,8 @@
 ---
 
 ## 🖱️ Configuración del Trackball PMW3610
+
+**CPI (Velocidad):** 2400 (2x más rápido que default 1200)
 
 ### Modos por capa
 
@@ -449,10 +457,16 @@ Nota: En modo Gaming, usa las teclas CTRL/ALT/GUI físicas en lugar de home row 
 
 ### Activar modo Gaming
 ```
+PARA ACTIVAR:
 1. Hold GUI (pulgar derecho) → Activa Layer 2 (NAV)
 2. Presiona 6 (primera tecla superior lado derecho)
-3. Modo gaming ON/OFF activado
-4. Para desactivar: repite GUI + 6
+3. Modo gaming ACTIVADO permanentemente
+4. Ahora puedes mantener WASD sin problemas
+
+PARA DESACTIVAR:
+1. Hold GUI (pulgar derecho) → Activa Layer G-NAV
+2. Presiona 6 de nuevo
+3. Vuelves a modo base con home row mods
 ```
 
 **En modo gaming:**
