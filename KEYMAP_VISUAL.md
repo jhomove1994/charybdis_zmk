@@ -160,6 +160,69 @@
 ├─────────┼─────┼─────┼─────┼─────┼─────┤         ├─────┼─────┼─────┼─────┼─────┼─────────┤
 │  RESET  │ BT0 │ BT1 │ BT2 │ BT3 │ BT4 │         │ BT4 │ BT3 │ BT2 │ BT1 │ BT0 │ RESET   │
 ├─────────┼─────┼─────┼─────┼─────┼─────┤         ├─────┼─────┼─────┼─────┼─────┼─────────┤
+│         │GAME │     │     │     │BTCLR│         │BTCLR│     │     │     │GAME │         │
+├─────────┼─────┼─────┼─────┼─────┼─────┤         ├─────┼─────┼─────┼─────┼─────┼─────────┤
+│         │     │     │     │     │     │         │     │     │     │     │     │         │
+╰─────────┴─────┴─────┼─────┼─────┼─────┤         ├─────┼─────┼─────┴─────┴─────┴─────────╯
+                      │ *** │     │ *** │         │ *** │     │
+                      ╰─────┴─────┴─────╯         ╰─────┴─────╯
+                            │     │     │         │ *** │
+                            ╰─────┴─────╯         ╰─────╯
+```
+
+**Capa automática - se activa al presionar Layer 1 + 2 simultáneamente**
+
+**Características:**
+- ✅ **Bluetooth Profiles**: BT0-BT4 (5 dispositivos)
+- ✅ **BT CLR**: Limpiar emparejamiento Bluetooth (centro)
+- ✅ **GAME**: Toggle capa gaming (tecla A/O en home row) - ON/OFF modo gaming sin home row mods
+- ✅ **RESET**: Reiniciar firmware (esquinas superiores)
+- ✅ **BOOTLOADER**: Entrar en modo bootloader para flashear (esquinas top)
+- ✅ **Trackball**: Movimiento normal
+
+---
+
+## 🎮 Capa 4: GAMING (Sin Home Row Mods)
+
+```
+╭─────┬─────┬─────┬─────┬─────┬─────╮              ╭─────┬─────┬─────┬─────┬─────┬──────╮
+│ ESC │  1  │  2  │  3  │  4  │  5  │              │  6  │  7  │  8  │  9  │  0  │ BKSP │
+├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
+│ TAB │  Q  │  W  │  F  │  P  │  B  │              │  J  │  L  │  U  │  Y  │  ;  │  \   │
+├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
+│ DEL │  A  │  R  │  S  │  T  │  G  │              │  M  │  N  │  E  │  I  │  O  │  '   │
+├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
+│SHIFT│  Z  │  X  │  C  │  D  │  V  │              │  K  │  H  │  ,  │  .  │  /  │  -   │
+╰─────┴─────┴─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┴─────┴─────┴──────╯
+                  │ TAB │LCLK │RCLK │              │ RET │BKSP │
+                  │ ➎  │     │     │              │ ➎  │     │
+                  ╰─────┴─────┴─────╯              ╰─────┴─────╯
+                        │ SPC │ ➏  │              │ GUI │
+                        │     │     │              │ ➏  │
+                        ╰─────┴─────╯              ╰─────╯
+```
+
+**Activar/Desactivar:**
+- Mantén TAB + GUI (Layer 3)
+- Presiona A (izq) o O (der) 
+- Modo GAMING ON/OFF
+
+**Características:**
+- ✅ **Sin Home Row Mods**: A, R, S, T, N, E, I, O son teclas normales
+- ✅ **Sin combos**: No hay interferencia de combos durante juego
+- ✅ **Acceso rápido**: TAB/RET acceden a capa de números (Layer 5)
+- ✅ **Trackball**: Movimiento normal para apuntar en juegos
+
+---
+
+## ⚙️ Capa 3: SYSTEM & BLUETOOTH
+
+```
+╭─────────┬─────┬─────┬─────┬─────┬─────╮         ╭─────┬─────┬─────┬─────┬─────┬─────────╮
+│BOOTLOAD │     │     │     │     │     │         │     │     │     │     │     │BOOTLOAD │
+├─────────┼─────┼─────┼─────┼─────┼─────┤         ├─────┼─────┼─────┼─────┼─────┼─────────┤
+│  RESET  │ BT0 │ BT1 │ BT2 │ BT3 │ BT4 │         │ BT4 │ BT3 │ BT2 │ BT1 │ BT0 │ RESET   │
+├─────────┼─────┼─────┼─────┼─────┼─────┤         ├─────┼─────┼─────┼─────┼─────┼─────────┤
 │         │🎮TOG│     │     │     │BTCLR│         │BTCLR│     │     │     │🎮TOG│         │
 ├─────────┼─────┼─────┼─────┼─────┼─────┤         ├─────┼─────┼─────┼─────┼─────┼─────────┤
 │         │     │     │     │     │     │         │     │     │     │     │     │         │
@@ -381,6 +444,14 @@ Nota: En modo Gaming, usa las teclas CTRL/ALT/GUI físicas en lugar de home row 
 2. Presiona A (izquierda) o O (derecha) - ambas son teclas toggle
 3. Suelta TAB + GUI
 4. El teclado ahora está en el modo opuesto
+```
+
+### Activar modo Gaming
+```
+1. Hold TAB + GUI (activa Layer 3)
+2. Presiona A (izq) o O (der) - toggle gaming
+3. En modo gaming: sin home row mods, sin combos
+4. Para desactivar: repite TAB + GUI + A/O
 ```
 
 ### Cambiar dispositivo Bluetooth
