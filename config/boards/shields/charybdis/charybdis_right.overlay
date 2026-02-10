@@ -33,5 +33,4 @@
 &trackball {
 	status = "okay"; //okay
 	irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-	pixart,cpi = <2400>;  // Aumentar CPI (más velocidad) - default 1200
 };

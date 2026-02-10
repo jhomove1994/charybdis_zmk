@@ -255,8 +255,6 @@
 
 ## 🖱️ Configuración del Trackball PMW3610
 
-**CPI (Velocidad):** 2400 (2x más rápido que default 1200)
-
 ### Modos por capa
 
 | Capa | Modo | Comportamiento |
