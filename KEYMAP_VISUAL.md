@@ -183,17 +183,17 @@
 
 ---
 
-## 🎮 Capa 4: GAMING (Sin Home Row Mods)
+## 🎮 Capa 4: GAMING QWERTY (Sin Home Row Mods)
 
 ```
 ╭─────┬─────┬─────┬─────┬─────┬─────╮              ╭─────┬─────┬─────┬─────┬─────┬──────╮
 │ ESC │  1  │  2  │  3  │  4  │  5  │              │  6  │  7  │  8  │  9  │  0  │ BKSP │
 ├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
-│ TAB │  Q  │  W  │  F  │  P  │  B  │              │  J  │  L  │  U  │  Y  │  ;  │  \   │
+│ TAB │  Q  │  W  │  E  │  R  │  T  │              │  Y  │  U  │  I  │  O  │  P  │  \   │
 ├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
-│ DEL │  A  │  R  │  S  │  T  │  G  │              │  M  │  N  │  E  │  I  │  O  │  '   │
+│ DEL │  A  │  S  │  D  │  F  │  G  │              │  H  │  J  │  K  │  L  │  ;  │  '   │
 ├─────┼─────┼─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┼─────┼─────┼──────┤
-│SHIFT│  Z  │  X  │  C  │  D  │  V  │              │  K  │  H  │  ,  │  .  │  /  │  -   │
+│SHIFT│  Z  │  X  │  C  │  V  │  B  │              │  N  │  M  │  ,  │  .  │  /  │  -   │
 ╰─────┴─────┴─────┼─────┼─────┼─────┤              ├─────┼─────┼─────┴─────┴─────┴──────╯
                   │ TAB │LCLK │RCLK │              │ RET │BKSP │
                   │ ➎  │     │     │              │ ➎  │     │
@@ -206,15 +206,16 @@
 **Activar/Desactivar:**
 - Mantén GUI (pulgar derecho)
 - Presiona 6 (primera tecla superior lado derecho)
-- Se cambia PERMANENTEMENTE a modo gaming
+- Se cambia PERMANENTEMENTE a QWERTY gaming
 
 **Para SALIR de modo gaming:**
 - Mantén GUI (pulgar derecho) 
 - Presiona 6 de nuevo
-- Vuelves PERMANENTEMENTE a modo base
+- Vuelves PERMANENTEMENTE a modo Colemak-DH base
 
 **Características:**
-- ✅ **Sin Home Row Mods**: A, R, S, T, N, E, I, O son teclas normales
+- ✅ **Layout QWERTY estándar** - Perfecto para gaming (WASD en posiciones normales)
+- ✅ **Sin Home Row Mods**: A, S, D, F son teclas normales
 - ✅ **Sin combos**: No hay interferencia de combos durante juego
 - ✅ **Puedes mantener WASD** presionado sin activar modificadores
 - ✅ **Acceso rápido**: TAB/RET acceden a capa de números (Layer 5)
